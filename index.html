@@ -371,7 +371,7 @@ function toXML(ev, bpm, nu, de) {
   const open = () => { 
       let attr = '';
       if (mn === 1) {
-          attr = `<attributes><divisions>4</divisions><key><fifths>0</fifths></key><time><beats>${nu}</beats><beat-type>${de}</beat-type></time><clef><sign>G</sign><line>2</line></clef></attributes><direction placement="above"><direction-type><words/></direction-type><sound tempo="${bpm}"/></direction>`;
+          attr = `<attributes><divisions>4</divisions><key><fifths>0</fifths></key><time><beats>${nu}</beats><beat-type>${de}</beat-type></time><clef><sign>G</sign><line>2</line></clef></attributes><direction placement="above"><direction-type><words>Tempo</words></direction-type><sound tempo="${bpm}"/></direction>`;
       }
       out += `<measure number="${mn}">${attr}`; 
       opened = true; 
@@ -691,7 +691,9 @@ async function load(data, name, rawMidiBuf = null) {
     document.querySelector('#msg').textContent = `${name} · ${mIdx.length} compases · Tempo ${Math.round(base)} bpm`;
     saveSession(data, name, rawMidiBuf);
   } catch(e) { 
-      document.querySelector('#msg').textContent = 'Error al abrir: Verifica el archivo.'; 
+      console.error("Error detallado al cargar:", e);
+      document.querySelector('#msg').textContent = 'Error al abrir: ' + (e.message || 'Verifica el archivo.'); 
+      localStorage.removeItem('osmd_stand_data'); // Borrar la caché corrupta automáticamente
   }
 }
 
