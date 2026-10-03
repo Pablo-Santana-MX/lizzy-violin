@@ -1,8 +1,8 @@
 # 🎀 Lizzy Plays Violin
 
-**Lizzy Plays Violin** es una aplicación web de una sola página (SPA) diseñada para revolucionar la forma en que los estudiantes de música practican su instrumento. Combina un avanzado atril digital para leer partituras con un afinador inteligente integrado, ejecutándose 100% en el navegador sin necesidad de instalar software adicional ni subir archivos a servidores de terceros.
+> Un atril digital interactivo y afinador inteligente en el navegador. Renderiza partituras (MusicXML/MIDI), reproduce audio con instrumentos reales de forma sincronizada y te ayuda a practicar con herramientas de bucle, metrónomo y detección de tono en tiempo real.
 
-🔗 **[Ver Demo en Vivo](https://TU-USUARIO.github.io/lizzy-violin/)**
+🔗 **[Ver Demo en Vivo](https://Pablo-Santana-MX.github.io/lizzy-violin/)**
 
 ## ✨ Características Principales
 
@@ -33,19 +33,22 @@ Este proyecto no requiere de procesos de compilación (build tools) ni de un bac
 
 1. Clona el repositorio:
    ```bash
-   git clone [https://github.com/TU-USUARIO/lizzy-violin.git](https://github.com/TU-USUARIO/lizzy-violin.git)
-Entra en la carpeta del proyecto:
+   git clone [https://github.com/Pablo-Santana-MX/lizzy-violin.git](https://github.com/Pablo-Santana-MX/lizzy-violin.git)
+   ```
+2. Entra en la carpeta del proyecto:
+   ```bash
+   cd lizzy-violin
+   ```
+3. ¡Listo! Solo necesitas abrir el archivo `index.html` en cualquier navegador web moderno (Chrome, Firefox, Safari, Edge).
 
-Bash
-cd lizzy-violin
-¡Listo! Solo necesitas abrir el archivo index.html en cualquier navegador web moderno (Chrome, Firefox, Safari, Edge).
+*Nota: Para el funcionamiento del micrófono en el afinador, los navegadores modernos requieren que la página se sirva desde un origen seguro (HTTPS) o desde `localhost`. Si usas GitHub Pages, el HTTPS ya está configurado por defecto.*
 
-Nota: Para el funcionamiento del micrófono en el afinador, los navegadores modernos requieren que la página se sirva desde un origen seguro (HTTPS) o desde localhost. Si usas GitHub Pages, el HTTPS ya está configurado por defecto.
+## 💡 Cómo conseguir partituras
+La aplicación procesa archivos locales. Si tienes partituras en PDF, puedes usar herramientas de código abierto como [Audiveris](https://github.com/Audiveris/audiveris) para convertirlas a MusicXML, o transcribirlas en software gratuito como MuseScore Studio y exportarlas a `.mxl`.
 
-💡 Cómo conseguir partituras
-La aplicación procesa archivos locales. Si tienes partituras en PDF, puedes usar herramientas de código abierto como Audiveris para convertirlas a MusicXML, o transcribirlas en software gratuito como MuseScore Studio y exportarlas a .mxl.
+## 📜 Licencia
 
-📜 Licencia
 Este proyecto se distribuye bajo la licencia MIT. Eres libre de usarlo, modificarlo y distribuirlo.
 
-Diseñado con 💖 para músicos, estudiantes y entusiastas del código.
+---
+*Diseñado con 💖 para músicos, estudiantes y entusiastas del código.*
