@@ -34,3 +34,18 @@ Este proyecto no requiere de procesos de compilación (build tools) ni de un bac
 1. Clona el repositorio:
    ```bash
    git clone [https://github.com/TU-USUARIO/lizzy-violin.git](https://github.com/TU-USUARIO/lizzy-violin.git)
+Entra en la carpeta del proyecto:
+
+Bash
+cd lizzy-violin
+¡Listo! Solo necesitas abrir el archivo index.html en cualquier navegador web moderno (Chrome, Firefox, Safari, Edge).
+
+Nota: Para el funcionamiento del micrófono en el afinador, los navegadores modernos requieren que la página se sirva desde un origen seguro (HTTPS) o desde localhost. Si usas GitHub Pages, el HTTPS ya está configurado por defecto.
+
+💡 Cómo conseguir partituras
+La aplicación procesa archivos locales. Si tienes partituras en PDF, puedes usar herramientas de código abierto como Audiveris para convertirlas a MusicXML, o transcribirlas en software gratuito como MuseScore Studio y exportarlas a .mxl.
+
+📜 Licencia
+Este proyecto se distribuye bajo la licencia MIT. Eres libre de usarlo, modificarlo y distribuirlo.
+
+Diseñado con 💖 para músicos, estudiantes y entusiastas del código.
